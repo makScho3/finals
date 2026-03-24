@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 InputDirection;
     bool isGrounded;
 
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -58,6 +59,13 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             isGrounded = false;
+        }
+
+        FixedJointDestroyer fjd = collision.gameObject.GetComponent<FixedJointDestroyer>();
+
+        if (fjd != null)
+        {
+            fjd.BreakJoints();
         }
     }
 }
