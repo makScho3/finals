@@ -5,7 +5,6 @@ public class Trampoline : MonoBehaviour
     [SerializeField] float force = 100f;
 
     private Rigidbody rb;
-    private LineRenderer line;
 
     void Start()
     {

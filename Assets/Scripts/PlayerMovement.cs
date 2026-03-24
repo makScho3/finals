@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (fjd != null)
         {
-            fjd.BreakJoints();
+            fjd.BreakJointsDelay();
         }
     }
 }
