@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class FixedJointDestroyer : MonoBehaviour
 {
-    private float breakTime = 1.5f;
     public void BreakJointsDelay()
     {
-        Invoke("BreakJoints", 1.5f);
+        Invoke("BreakJoints", .5f);
     }
 
     public void BreakJoints()
